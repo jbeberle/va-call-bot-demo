@@ -1,0 +1,49 @@
+{
+  "name": "va_signin_support_bot",
+  "version": "1.2.4",
+  "description": "Bot Builder v4 echo skill bot sample",
+  "author": "Microsoft",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js --ignore ./azurite",
+    "watch": "nodemon ./index.js --ignore ./azurite",
+    "lint": "eslint .",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js",
+      "./dialogs/**/*.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "botbuilder": "^4.19.2",
+    "botbuilder-ai": "^4.20.0",
+    "botbuilder-azure": "^4.19.2",
+    "botbuilder-azure-blobs": "^4.19.2",
+    "botbuilder-dialogs": "^4.16.0",
+    "dotenv": "~8.2.0",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "offline-directline": "^1.3.1",
+    "restify": "^11.1.0"
+  },
+  "devDependencies": {
+    "botbuilder-testing": "^4.16.0",
+    "eslint": "^7.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^28.1.2"
+  }
+}

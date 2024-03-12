@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
+  "$id": "SigninSupportSkill",
+  "name": "Signin Skill",
+  "version": "1.0.0",
+  "description": "Signin Experience Skill for PVA",
+  "publisherName": "The Department of Veterans Affairs",
+  "privacyUrl": "https://echoskillbot.contoso.com/privacy.html",
+  "copyright": "Copyright (c) Department of Veterans Affairs. All rights reserved.",
+  "license": "",
+  "iconUrl": "https://echoskillbot.contoso.com/icon.png",
+  "tags": ["signin"],
+  "endpoints": [
+    {
+      "name": "default",
+      "protocol": "BotFrameworkV3",
+      "description": "Default endpoint for the skill",
+      "endpointUrl": "placeholder",
+      "msAppId": "placeholder"
+    }
+  ],
+  "activities": {
+    "message": {
+      "type": "message",
+      "description": "Signin support skill",
+      "resultValue": {
+        "$ref": "#/definitions/output"
+      }
+    }
+  },
+  "definitions": {
+    "output": {
+      "type": "object",
+      "description": "The resolution the user chose",
+      "properties": {
+        "resolutionChoice": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

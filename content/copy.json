@@ -1,0 +1,9 @@
+{
+  "logingov": {
+    "buttons": {
+      "forgotMyPassword": "Forgot my Password",
+      "sendingMyID": "Sending my ID"
+    },
+    "prompts": {}
+  }
+}
